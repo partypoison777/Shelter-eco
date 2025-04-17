@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHELTER</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .glitch-title {
+      font-size: 3rem;
+      color: red;
+      letter-spacing: 0.2rem;
+      text-shadow: 1px 0 white, -1px 0 white;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      font-size: 1.5rem;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    input[type="text"] {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: none;
+      outline: none;
+      margin-bottom: 1rem;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      background-color: red;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      margin: 0.5rem;
+    }
+    .donate {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+    .donate a {
+      color: white;
+      text-decoration: underline;
+    }
+    .counter {
+      margin-top: 1rem;
+      font-size: 0.7rem;
+      color: gray;
+    }
+    .backrooms-section {
+      margin-top: 3rem;
+      padding: 2rem;
+      background-color: #111;
+      border-top: 1px solid crimson;
+    }
+    .backrooms-section h2 {
+      color: crimson;
+      margin-bottom: 1rem;
+    }
+    .doors {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .door {
+      background-color: #222;
+      padding: 1rem;
+      border: 1px solid crimson;
+      width: 200px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .door:hover {
+      background-color: crimson;
+      color: black;
+    }
+  </style>
+  <script defer src="https://cdn.counter.dev/script.js" data-id="ShelterCounter" data-utcoffset="-3"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="glitch-title">SHELTER</div>
+    <div class="subtitle">FUEGO SAGRADO</div>
+    <p>"¿Qué es la belleza en un mundo roto?"</p>
+    <input type="text" placeholder="Escribí tu respuesta...">
+    <div>
+      <button>Entrar</button>
+      <button onclick="document.getElementById('backrooms').scrollIntoView({behavior: 'smooth'})">Explorar Habitaciones</button>
+    </div>
+
+    <div class="donate">
+      Si esta llama te tocó, <a href="https://cafecito.app/TUNOMBRE" target="_blank">dejá una ofrenda</a>. Que el fuego no se apague.
+    </div>
+    <div class="counter">
+      Contador activado por Counter.dev
+    </div>
+  </div>
+
+  <div id="backrooms" class="backrooms-section">
+    <h2>Las Habitaciones del Eco</h2>
+    <p>Elegí una puerta. Algunas no llevan a ningún lado. O eso parece...</p>
+    <div class="doors">
+      <div class="door" onclick="window.location.href='flor404.html'">Flor 404</div>
+      <div class="door" onclick="alert('Esta puerta aún no fue construida.')">Ecos de la Nada</div>
+      <div class="door" onclick="alert('Esta habitación está soñando con vos.')">Puerta Latente</div>
+    </div>
+  </div>
+</body>
+</html>

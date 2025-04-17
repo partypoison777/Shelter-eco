@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flor 404</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: 'Courier New', monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+      text-align: center;
+    }
+    .flower {
+      font-size: 2rem;
+      animation: rotate 8s linear infinite;
+    }
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .message {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+      color: gray;
+      max-width: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div class="flower">&#10047;</div>
+  <div class="message">
+    Intentaste encontrar algo. Pero esta es solo una flor que no sabe crecer.
+  </div>
+</body>
+</html>
